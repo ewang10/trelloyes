@@ -4,7 +4,7 @@ import Card from './Card';
 
 function List(props) {
     const cardList = props.cards.map(card =>
-        <Card title={card.title} content={card.content}/>
+        <Card key={props.id} title={card.title} content={card.content}/>
     );
     return (
         <section className='List'>
